@@ -1,3 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  /*font-family: 'Overpass', sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;*/
+}
+
+:root {
+  --Light-red: hsl(356, 100%, 66%);
+  --Very-light-red: hsl(355, 100%, 74%);
+  --Very-dark-blue: hsl(208, 49%, 24%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grayish-blue: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --Very-dark-black-blue: hsl(240, 10%, 16%);
+
+  /*nav gradient*/
+
+  --Very-light-red: hsl(13, 100%, 72%);
+  --Light-red: hsl(353, 100%, 62%);
+
+  /*Background gradient - body*/
+
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Verydark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+h1 {
+  font-family: "Overpass", sans-serif;
+  color: var(--White);
+}
+h2 {
+  font-family: "Overpass", sans-serif;
+  color: var(--Very-dark-blue);
+}
+p {
+  font-family: "Overpass", sans-serif;
+  color: var(--Very-dark-grayish-blue);
+}
+.intro {
+  background-image: linear-gradient(var(--Very-light-red), var(--Light-red)),
+    url("./images/bg-pattern-intro.svg");
+  background-position: center;
+  background-size: cover;
+  height: 73vh;
+  border-radius: 0 0 0 6rem;
+  padding: 4rem 2rem;
+}
+.intro h1 {
+  padding-bottom: 2rem;
+}
+.intro p {
+  color: var(--White);
+  padding-bottom: 5.5rem;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6.4rem;
+}
+.hamnav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.hamnav label,
+#hamburger {
+  display: none;
+}
+#hamburger {
+  border: 1px solid black;
+}
+.optionContainer {
+  display: flex;
+}
+.optionContainer a {
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,34 +89,10 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.hamnav {
-    width: 100%;
-    position: sticky;
-    top: 0;
-  }
-  .hamnav label,
-  #hamburger {
-    display: none;
-  }
-  #hamburger {
-    border: 1px solid black;
-  }
-  .optionContainer {
-    display: flex;
-  }
-  .optionContainer a {
-    padding: 0.5rem 0.5rem;
-    text-decoration: none;
-  }
-
 @media screen and (max-width: 700px) {
-  .image_container img {
-    display: none;
-  }
   .hamnav label {
     display: inline-block;
     color: white;
-    background: #a02620;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
@@ -45,6 +105,7 @@
   }
   .optionContainer {
     display: none;
+    border: 1px solid red;
   }
   .hamnav input:checked ~ #optionContainer {
     display: block;
