@@ -1,0 +1,52 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.hamnav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .hamnav label,
+  #hamburger {
+    display: none;
+  }
+  #hamburger {
+    border: 1px solid black;
+  }
+  .optionContainer {
+    display: flex;
+  }
+  .optionContainer a {
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 700px) {
+  .image_container img {
+    display: none;
+  }
+  .hamnav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .optionContainer a {
+    background-color: rgba(255, 255, 255, 0.151);
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  .optionContainer {
+    display: none;
+  }
+  .hamnav input:checked ~ #optionContainer {
+    display: block;
+  }
+}
