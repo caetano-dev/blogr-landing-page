@@ -37,16 +37,16 @@ p {
   font-family: "Overpass", sans-serif;
   color: var(--Very-dark-grayish-blue);
 }
-ul{
+ul {
   list-style: none;
 }
 .intro {
   background-color: var(--Very-light-red);
   background-image: url("./images/bg-pattern-intro.svg"),
     linear-gradient(var(--Very-light-red), var(--Light-red));
-  background-size:60rem;
+  background-size: 60rem;
   background-position: -11rem 0rem;
-  height: 73vh;
+  height: 80vh;
   border-radius: 0 0 0 6rem;
   padding: 4rem 2rem;
 }
@@ -57,7 +57,7 @@ ul{
   color: var(--White);
   padding-bottom: 5.5rem;
 }
-header > div {
+header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 6.4rem;
@@ -67,19 +67,30 @@ header > div {
   position: sticky;
   top: 0;
 }
-.hamnav label,
+.hamnav > label,
 #hamburger {
   display: none;
 }
-#hamburger {
-  border: 1px solid black;
+.suboptionContainer {
+  display: flex;
+  border: 1px solid red;
 }
-.optionContainer a {
-  padding: 0.5rem 0.5rem;
-  text-decoration: none;
+.optionContainer label {
+  display: inline-block;
+  color: white;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
 }
-.suboptionContainer{
+#productList,
+#companyList,
+#connectList {
   display: none;
+}
+.productCheckbox:checked ~ #productList,
+.companyCheckbox:checked ~ #companyList,
+.connectCheckbox:checked ~ #connectList {
+  display: block;
 }
 .attribution {
   font-size: 11px;
@@ -88,6 +99,7 @@ header > div {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 @media screen and (max-width: 700px) {
   .hamnav label {
     display: inline-block;
@@ -96,17 +108,14 @@ header > div {
     font-size: 1.2em;
     padding: 10px;
   }
-  .optionContainer a {
-    background-color: rgba(255, 255, 255, 0.151);
-    box-sizing: border-box;
+  #hamburger:checked ~ .optionContainer {
     display: block;
-    width: 100%;
   }
   .optionContainer {
     display: none;
-    border: 1px solid red;
   }
-  .hamnav input:checked ~ #optionContainer {
-    display: block;
+
+  main {
+    padding-top: 4rem;
   }
 }
