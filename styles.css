@@ -24,6 +24,10 @@
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
   --Verydark-desaturated-blue: hsl(237, 23%, 32%);
 }
+button {
+  outline: none;
+  cursor: pointer;
+}
 
 h1 {
   font-family: "Overpass", sans-serif;
@@ -44,18 +48,24 @@ ul {
   background-color: var(--Very-light-red);
   background-image: url("./images/bg-pattern-intro.svg"),
     linear-gradient(var(--Very-light-red), var(--Light-red));
-  background-size: 60rem;
-  background-position: -11rem 0rem;
-  height: 80vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 30rem;
+  padding: 4rem 7rem;
   border-radius: 0 0 0 6rem;
-  padding: 4rem 2rem;
+}
+.intro h1,
+.intro p {
+  text-align: center;
 }
 .intro h1 {
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 .intro p {
   color: var(--White);
-  padding-bottom: 5.5rem;
+  padding-bottom: 2rem;
 }
 header {
   display: flex;
@@ -74,7 +84,8 @@ header {
 .optionContainer {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5rem;
+  align-items: center;
+  padding-left: 1.5rem;
 }
 .optionContainer div {
   text-align: center;
@@ -107,30 +118,42 @@ header {
 .connectCheckbox:checked ~ #connectList {
   display: block;
 }
-
 .product-active {
   display: flex;
 }
 
 .login,
-.signUp {
-  outline: none;
+.signUp,
+.learnMore,
+.startForFree {
   height: 3rem;
-  border: none;
   font-weight: bold;
   text-align: center;
-}
-.login {
-  background-color: transparent;
-  outline: none;
+  border-radius: 2rem;
   width: 6rem;
   height: 3rem;
+  border: none;
+}
+.signUp,
+.startForFree {
+  width: 8rem;
+  color: var(--Lighter-red);
+}
+.login,
+.learnMore {
+  background-color: transparent;
   color: var(--White);
 }
-.signUp {
+.learnMore {
+  border: 1px solid var(--White);
   width: 8rem;
-  border-radius: 2rem;
-  color: var(--Lighter-red);
+}
+.JoinButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+.JoinButtonContainer button {
+  margin: 0rem 0.5rem;
 }
 .attribution {
   font-size: 11px;
@@ -152,9 +175,5 @@ header {
   }
   .optionContainer {
     display: none;
-  }
-
-  main {
-    padding-top: 4rem;
   }
 }
