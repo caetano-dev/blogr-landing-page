@@ -9,7 +9,7 @@
 }
 
 :root {
-  --Light-red: hsl(356, 100%, 66%);
+  --Lighter-red: hsl(356, 100%, 66%);
   --Very-light-red: hsl(355, 100%, 74%);
   --Very-dark-blue: hsl(208, 49%, 24%);
 
@@ -71,26 +71,66 @@ header {
 #hamburger {
   display: none;
 }
+.optionContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+.optionContainer div {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0rem 1rem;
+}
+
+.optionContainer span {
+  color: var(--White);
+  font-family: "Overpass", sans-serif;
+}
+
 .suboptionContainer {
   display: flex;
-  border: 1px solid red;
 }
-.optionContainer label {
-  display: inline-block;
-  color: white;
-  font-style: normal;
-  font-size: 1.2em;
-  padding: 10px;
-}
+
 #productList,
 #companyList,
 #connectList {
   display: none;
 }
+.option-active {
+  display: flex !important;
+  flex-direction: column;
+}
 .productCheckbox:checked ~ #productList,
 .companyCheckbox:checked ~ #companyList,
 .connectCheckbox:checked ~ #connectList {
   display: block;
+}
+
+.product-active {
+  display: flex;
+}
+
+.login,
+.signUp {
+  outline: none;
+  height: 3rem;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+}
+.login {
+  background-color: transparent;
+  outline: none;
+  width: 6rem;
+  height: 3rem;
+  color: var(--White);
+}
+.signUp {
+  width: 8rem;
+  border-radius: 2rem;
+  color: var(--Lighter-red);
 }
 .attribution {
   font-size: 11px;
@@ -99,7 +139,6 @@ header {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
 @media screen and (max-width: 700px) {
   .hamnav label {
     display: inline-block;
