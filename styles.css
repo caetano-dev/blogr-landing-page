@@ -5,7 +5,6 @@
   padding: 0;
 
   /*font-family: 'Overpass', sans-serif;
-
     font-family: 'Ubuntu', sans-serif;*/
 }
 
@@ -19,12 +18,8 @@
   --Very-dark-grayish-blue: hsl(207, 13%, 34%);
   --Very-dark-black-blue: hsl(240, 10%, 16%);
 
-  /*nav gradient*/
-
   --Very-light-red: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
-
-  /*Background gradient - body*/
 
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
   --Verydark-desaturated-blue: hsl(237, 23%, 32%);
@@ -42,11 +37,15 @@ p {
   font-family: "Overpass", sans-serif;
   color: var(--Very-dark-grayish-blue);
 }
+ul{
+  list-style: none;
+}
 .intro {
-  background-image: linear-gradient(var(--Very-light-red), var(--Light-red)),
-    url("./images/bg-pattern-intro.svg");
-  background-position: center;
-  background-size: cover;
+  background-color: var(--Very-light-red);
+  background-image: url("./images/bg-pattern-intro.svg"),
+    linear-gradient(var(--Very-light-red), var(--Light-red));
+  background-size:60rem;
+  background-position: -11rem 0rem;
   height: 73vh;
   border-radius: 0 0 0 6rem;
   padding: 4rem 2rem;
@@ -75,12 +74,12 @@ header > div {
 #hamburger {
   border: 1px solid black;
 }
-.optionContainer {
-  display: flex;
-}
 .optionContainer a {
   padding: 0.5rem 0.5rem;
   text-decoration: none;
+}
+.suboptionContainer{
+  display: none;
 }
 .attribution {
   font-size: 11px;
