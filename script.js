@@ -1,4 +1,18 @@
-const productButton = document.querySelector("#Product");
-const companyButton = document.querySelector("#Company");
-const connectButton = document.querySelector("#Connect");
-const productSuboption = document.querySelector(".productSuboption");
+const product = document.querySelector(".productContainer");
+const company = document.querySelector(".companyContainer");
+const connect = document.querySelector(".connectContainer");
+const productList = document.querySelector("#productList");
+
+
+const toggle = () =>{
+    product.addEventListener("click", ()=>{
+        productList.classList.toggle("option-active")
+    })
+    company.addEventListener("click", ()=>{
+        companyList.classList.toggle("option-active")
+    })
+    connect.addEventListener("click", ()=>{
+        connectList.classList.toggle("option-active")
+    })
+}
+toggle();
