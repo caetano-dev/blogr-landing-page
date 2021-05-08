@@ -25,8 +25,9 @@
           <input type="checkbox" id="hamburger" />
 
           <div class="optionContainer">
-            <label for="productCheckbox" id="Product">Product</label>
-            <input type="checkbox" class="productCheckbox" />
+            <div>
+            <div class="productContainer">
+              <span>Product</span>
             <ul id="productList">
               <li class="suboption">overview</li>
               <li class="suboption">Pricing</li>
@@ -34,26 +35,30 @@
               <li class="suboption">Features</li>
               <li class="suboption">Integrations</li>
             </ul>
+          </div>
 
-            <label for="companyCheckbox" id="Company">Company</label>
-            <input type="checkbox" class="companyCheckbox" />
+            <div class="companyContainer" >
+              <span>Company</span>
             <ul id="companyList">
               <li class="suboption">About</li>
               <li class="suboption">Team</li>
               <li class="suboption">Blog</li>
               <li class="suboption">Careers</li>
             </ul>
+          </div>
 
-            <label for="connectCheckbox" id="Connect">Connect</label>
-            <input type="checkbox" class="connectCheckbox" />
+            <div class="connectContainer">
+            <span>Connect</span>
             <ul id="connectList">
               <li class="suboption">Contact</li>
               <li class="suboption">Newsletter</li>
               <li class="suboption">LinkedIn</li>
             </ul>
+          </div>
+        </div>
             <div class="LoginContainer">
-              <button>Login</button>
-              <button>Sign Up</button>
+              <button class="login">Login</button>
+              <button class="signUp">Sign Up</button>
             </div>
           </div>
         </nav>
