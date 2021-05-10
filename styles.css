@@ -22,7 +22,7 @@
   --Light-red: hsl(353, 100%, 62%);
 
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
-  --Verydark-desaturated-blue: hsl(237, 23%, 32%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 button {
   outline: none;
@@ -165,19 +165,37 @@ header {
 
 .firstAndSecondSectionContainer h2 {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
+}
+.firstAndSecondSectionContainer h3 {
+  padding-bottom: 1rem;
 }
 .firstAndSecondSectionContainer {
   background-image: url("./images/illustration-editor-desktop.svg");
-  background-position: right 3rem;
+  /*background-position: 60vw 1rem ;*/
+  background-position: 60vw 1rem;
+  background-size: 50rem auto;
   background-repeat: no-repeat;
-  background-size: 45rem;
-  padding: 6rem 0rem;
+  padding: 6rem 0rem 17rem 0rem;
 }
 .firstSection,
 .secondSection {
-  margin-right: 50rem;
-  padding: 2rem 0rem 2rem 7rem;
+  margin-right: 50%;
+  padding: 2rem 5rem 2rem 10vw;
+  word-spacing: 1px;
+  word-break: keep-all;
+}
+.infrastructureSection {
+  background-image: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(
+      90deg,
+      var(--Very-dark-gray-blue),
+      var(--Very-dark-desaturated-blue)
+    );
+  background-repeat: no-repeat repeat;
+  background-position: -13.5rem -30rem, 0rem 0rem;
+  height: 30rem;
+  border-radius: 0rem 6rem 0rem 6rem;
 }
 .attribution {
   font-size: 11px;
