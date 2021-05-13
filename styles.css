@@ -172,7 +172,6 @@ header {
 }
 .firstAndSecondSectionContainer {
   background-image: url("./images/illustration-editor-desktop.svg");
-  /*background-position: 60vw 1rem ;*/
   background-position: 60vw 1rem;
   background-size: 50rem auto;
   background-repeat: no-repeat;
@@ -213,6 +212,28 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: 0rem 7rem 0rem 0rem;
+}
+
+.fourthAndFithSectionContainer h3 {
+  padding-bottom: 1rem;
+}
+.fourthAndFithSectionContainer {
+  background-image: url("./images/illustration-laptop-desktop.svg");
+  background-position: -14.5rem 1rem;
+  background-size: 50rem auto;
+  background-repeat: no-repeat;
+  padding: 6rem 0rem 17rem 0rem;
+  margin-top: 4rem;
+}
+.fourthSection {
+  margin-top: 3.5rem;
+}
+.fourthSection,
+.fithSection {
+  margin-left: 40%;
+  padding: 2rem 15% 2rem 2%;
+  word-spacing: 1px;
+  word-break: keep-all;
 }
 .attribution {
   font-size: 11px;
