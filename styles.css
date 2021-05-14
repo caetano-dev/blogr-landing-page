@@ -57,7 +57,7 @@ li{
 }
 .intro {
   background-color: var(--Very-light-red);
-  background-image: url("./images/bg-pattern-intro.svg"),
+  background-image: url("/images/bg-pattern-intro.svg"),
     linear-gradient(var(--Very-light-red), var(--Light-red));
   background-position: center;
   background-size: 100%;
@@ -178,7 +178,7 @@ header {
   padding-bottom: 1rem;
 }
 .firstAndSecondSectionContainer {
-  background-image: url("./images/illustration-editor-desktop.svg");
+  background-image: url("/images/illustration-editor-desktop.svg");
   background-position: 60vw 1rem;
   background-size: 50rem auto;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ header {
   word-break: keep-all;
 }
 .infrastructureSection {
-  background-image: url("./images/bg-pattern-circles.svg"),
+  background-image: url("/images/bg-pattern-circles.svg"),
     linear-gradient(
       90deg,
       var(--Very-dark-gray-blue),
@@ -225,8 +225,9 @@ header {
   padding-bottom: 1rem;
 }
 .fourthAndFithSectionContainer {
-  background-image: url("./images/illustration-laptop-desktop.svg");
+  background-image: url("/images/illustration-laptop-desktop.svg");
   background-position: -14.5rem 1rem;
+
   background-size: 50rem auto;
   background-repeat: no-repeat;
   padding: 6rem 0rem 17rem 0rem;
