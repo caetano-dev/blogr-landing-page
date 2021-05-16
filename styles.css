@@ -51,7 +51,7 @@ p {
 ul {
   list-style: none;
 }
-li{
+li {
   padding-bottom: 1rem;
   cursor: pointer;
 }
@@ -243,13 +243,27 @@ header {
   word-spacing: 1px;
   word-break: keep-all;
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  border: 1px solid red;
+  border-radius: 0rem 3rem 0rem 0rem;
+  background-color: var(--Very-dark-black-blue);
+  display: flex;
+  justify-content: space-evenly;
+  height: 17rem;
+  padding: 1rem 0rem;
+  font-family: "Overpass", sans-serif;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+footer div {
+  padding-top: 2rem;
 }
+footer strong {
+  color: var(--White);
+}
+footer p {
+  margin-bottom: .5rem;
+  color: var(--Grayish-blue);
+}
+
 @media screen and (max-width: 700px) {
   .hamnav label {
     display: inline-block;
