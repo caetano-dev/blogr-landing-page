@@ -3,14 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-
-  /*font-family: 'Overpass', sans-serif;
-    font-family: 'Ubuntu', sans-serif;*/
 }
 
 :root {
   --Lighter-red: hsl(356, 100%, 66%);
-  --Very-light-red: hsl(355, 100%, 74%);
+  --Very-light-red-background: hsl(355, 100%, 74%);
   --Very-dark-blue: hsl(208, 49%, 24%);
 
   --White: hsl(0, 0%, 100%);
@@ -54,6 +51,8 @@ ul {
 li {
   padding-bottom: 1rem;
   cursor: pointer;
+  font-family: "Overpass", sans-serif;
+  font-weight: bold;
 }
 .intro {
   background-color: var(--Very-light-red);
@@ -109,6 +108,8 @@ header {
 .optionContainer span {
   color: var(--White);
   font-family: "Overpass", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .suboptionContainer {
@@ -121,16 +122,16 @@ header {
   display: none;
 }
 .option-active {
-  color: var(--White);
+  color: var(--Very-dark-black-blue);
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 6px;
   display: flex !important;
   flex-direction: column;
   position: absolute;
   top: 3rem;
-}
-.productCheckbox:checked ~ #productList,
-.companyCheckbox:checked ~ #companyList,
-.connectCheckbox:checked ~ #connectList {
-  display: block;
+
+  
 }
 .product-active {
   display: flex;
@@ -147,6 +148,16 @@ header {
   width: 6rem;
   height: 3rem;
   border: none;
+  transition: 0.5s;
+}
+.learnMore:hover {
+  background-color: var(--White);
+  color: var(--Very-light-red-background);
+}
+.startForFree:hover,
+.signUp:hover {
+  background-color: var(--Very-light-red-background);
+  color: var(--White);
 }
 .signUp,
 .startForFree {
@@ -260,7 +271,7 @@ footer strong {
   color: var(--White);
 }
 footer p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: var(--Grayish-blue);
 }
 
