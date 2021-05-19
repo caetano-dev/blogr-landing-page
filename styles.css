@@ -130,8 +130,6 @@ header {
   flex-direction: column;
   position: absolute;
   top: 3rem;
-
-  
 }
 .product-active {
   display: flex;
@@ -276,6 +274,9 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+  .firstAndSecondSectionContainer {
+    background-image: url("/images/illustration-editor-mobile.svg");
+  }
   .hamnav label {
     display: inline-block;
     color: white;
@@ -288,5 +289,8 @@ footer p {
   }
   .optionContainer {
     display: none;
+  }
+  .fourthAndFithSectionContainer {
+    background-image: url("/images/illustration-laptop-mobile.svg");
   }
 }
