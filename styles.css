@@ -52,7 +52,8 @@ li {
   padding-bottom: 1rem;
   cursor: pointer;
   font-family: "Overpass", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  transition: 0.5s;
 }
 .intro {
   background-color: var(--Very-light-red);
@@ -98,7 +99,6 @@ header {
   padding-left: 1.5rem;
 }
 .optionContainer div {
-  text-align: center;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
@@ -106,16 +106,16 @@ header {
 }
 
 .optionContainer span {
+  display: flex;
+  align-items: center;
   color: var(--White);
   font-family: "Overpass", sans-serif;
-  font-weight: bold;
   cursor: pointer;
 }
-
-.suboptionContainer {
-  display: flex;
+.optionContainer span:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
-
 #productList,
 #companyList,
 #connectList {
@@ -130,6 +130,9 @@ header {
   flex-direction: column;
   position: absolute;
   top: 3rem;
+}
+.option-active li:hover {
+  color: #000;
 }
 .product-active {
   display: flex;
