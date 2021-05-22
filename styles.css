@@ -191,10 +191,11 @@ header {
 }
 .firstAndSecondSectionContainer {
   background-image: url("/images/illustration-editor-desktop.svg");
-  background-position: 60vw 1rem;
+  background-position: right;
   background-size: 50rem auto;
   background-repeat: no-repeat;
   padding: 6rem 0rem 17rem 0rem;
+  margin-right: -14rem;
 }
 .firstSection,
 .secondSection {
