@@ -1,8 +1,6 @@
 const product = document.querySelector(".productContainer");
 const company = document.querySelector(".companyContainer");
 const connect = document.querySelector(".connectContainer");
-const productList = document.querySelector("#productList");
-
 
 const toggle = () =>{
     product.addEventListener("click", ()=>{
