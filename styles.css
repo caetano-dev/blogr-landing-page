@@ -188,11 +188,10 @@ header {
 }
 .firstAndSecondSectionContainer {
   background-image: url("/images/illustration-editor-desktop.svg");
-  background-position: right;
+  background-position: 60vw 0rem;
   background-size: 50rem auto;
   background-repeat: no-repeat;
   padding: 6rem 0rem 17rem 0rem;
-  margin-right: -14rem;
 }
 .firstSection,
 .secondSection {
@@ -272,8 +271,9 @@ footer p {
   color: var(--Grayish-blue);
 }
 @media screen and (max-width: 1200px) {
-  .firstAndSecondSectionContainer {
-    background-size: 40rem auto;
+  .firstSection,
+  .secondSection {
+    margin-right: 40%;
   }
   .infrastructureSection > img {
     margin: -4rem 2rem -7rem 3rem;
@@ -289,6 +289,52 @@ footer p {
   .fithSection {
     padding: 2rem 5rem 2rem 2%;
   }
+}
+@media screen and (max-width: 850px) {
+  .firstAndSecondSectionContainer {
+    background-position: 50vw 8rem;
+  }
+  .firstSection,
+  .secondSection {
+    margin-right: 23rem;
+    padding: 2rem 0rem 2rem 9vw;
+  }
+  .infrastructureSection {
+    flex-direction: column;
+    height: 30rem;
+  }
+  .infrastructureSection > img {
+    display: absolute;
+    margin: -16rem 5rem 0rem 5rem
+  }
+  .infrastructureSection > div {
+    text-align: center;
+    margin: 0rem 3rem 0rem 3rem;
+  }
+  .fourthAndFithSectionContainer {
+    background-size: 40rem auto;
+    border: 1px solid;
+
+      background-image: url("/images/illustration-laptop-mobile.svg");
+
+     background-position: 0rem 0rem;
+      padding: 6rem 0rem 17rem 0rem;
+      margin-top: 4rem;
+    }
+  
+  .fourthSection{
+    padding: 20rem 0rem 0rem 2rem;
+  }
+  .fithSection {
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  .fourthSection,
+.fithSection {
+  margin-left: 40%;
+  padding: 2rem 15% 2rem 2%;
+  word-spacing: 1px;
+  word-break: keep-all;
+}
 }
 @media screen and (max-width: 700px) {
   .firstAndSecondSectionContainer {
