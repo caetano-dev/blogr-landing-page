@@ -253,7 +253,6 @@ header {
   word-break: keep-all;
 }
 footer {
-  border: 1px solid red;
   border-radius: 0rem 3rem 0rem 0rem;
   background-color: var(--Very-dark-black-blue);
   display: flex;
@@ -283,7 +282,6 @@ footer p {
     padding-bottom: 1rem;
   }
   .fourthAndFithSectionContainer {
-    border: 1px solid red;
     background-image: url("/images/illustration-laptop-desktop.svg");
     background-size: 40rem auto;
   }
