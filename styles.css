@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
 }
-
 :root {
   --Lighter-red: hsl(356, 100%, 66%);
   --Very-light-red-background: hsl(355, 100%, 74%);
@@ -104,7 +103,6 @@ header {
   justify-content: space-evenly;
   padding: 0rem 1rem;
 }
-
 .optionContainer span {
   display: flex;
   align-items: center;
@@ -137,7 +135,6 @@ header {
 .product-active {
   display: flex;
 }
-
 .login,
 .signUp,
 .learnMore,
@@ -233,7 +230,6 @@ header {
   justify-content: center;
   margin: 0rem 7rem 0rem 0rem;
 }
-
 .fourthAndFithSectionContainer h3 {
   padding-bottom: 1rem;
 }
@@ -276,7 +272,26 @@ footer p {
   margin-bottom: 0.5rem;
   color: var(--Grayish-blue);
 }
-
+@media screen and (max-width: 1200px) {
+  .firstAndSecondSectionContainer {
+    background-size: 40rem auto;
+  }
+  .infrastructureSection > img {
+    margin: -4rem 2rem -7rem 3rem;
+  }
+  .fourthAndFithSectionContainer h3 {
+    padding-bottom: 1rem;
+  }
+  .fourthAndFithSectionContainer {
+    border: 1px solid red;
+    background-image: url("/images/illustration-laptop-desktop.svg");
+    background-size: 40rem auto;
+  }
+  .fourthSection,
+  .fithSection {
+    padding: 2rem 5rem 2rem 2%;
+  }
+}
 @media screen and (max-width: 700px) {
   .firstAndSecondSectionContainer {
     background-image: url("/images/illustration-editor-mobile.svg");
