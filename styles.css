@@ -291,10 +291,27 @@ footer p {
   }
 }
 @media screen and (max-width: 905px) {
+  .hamnav label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamburger:checked ~ .optionContainer {
+    display: block;
+  }
+  .optionContainer {
+    display: none;
+  }
+  .firstAndSecondSectionContainer {
+    background-image: url("/images/illustration-editor-mobile.svg");
+    background-position: 57vw 6.5rem;
+  }
   .firstSection,
   .secondSection {
-    margin-right: 20rem;
-    padding: 2rem 0rem 2rem 9vw;
+    margin-right: 33%;
+    padding: 2rem 0rem 2rem 10vw;
   }
   .infrastructureSection {
     flex-direction: column;
@@ -323,7 +340,7 @@ footer p {
     margin-top: 23rem;
   }
   .fithSection {
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 0rem;
   }
   .fourthSection,
   .fithSection {
@@ -331,31 +348,5 @@ footer p {
     margin-left: 0;
     padding: 2rem 3rem;
   }
-}
-@media screen and (max-width: 700px) {
-  .firstAndSecondSectionContainer {
-    background-image: url("/images/illustration-editor-mobile.svg");
-    background-position: 57vw 6.5rem;
-  }
-  .firstSection,
-  .secondSection {
-    margin-right: 30%;
-    padding: 2rem 0rem 2rem 10vw;
-  }
-  .hamnav label {
-    display: inline-block;
-    color: white;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-  #hamburger:checked ~ .optionContainer {
-    display: block;
-  }
-  .optionContainer {
-    display: none;
-  }
-  .fourthAndFithSectionContainer {
-    background-image: url("/images/illustration-laptop-mobile.svg");
-  }
+
 }
