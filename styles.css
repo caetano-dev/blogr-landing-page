@@ -290,22 +290,22 @@ footer p {
     padding: 2rem 5rem 2rem 2%;
   }
 }
-@media screen and (max-width: 850px) {
-  .firstAndSecondSectionContainer {
-    background-position: 50vw 8rem;
-  }
+@media screen and (max-width: 905px) {
   .firstSection,
   .secondSection {
-    margin-right: 23rem;
+    margin-right: 20rem;
     padding: 2rem 0rem 2rem 9vw;
   }
   .infrastructureSection {
     flex-direction: column;
     height: 30rem;
+    align-items: center;
+    justify-content: center;
   }
   .infrastructureSection > img {
+    width: 25rem;
     display: absolute;
-    margin: -16rem 5rem 0rem 5rem
+    margin: -16rem 5rem 0rem 5rem;
   }
   .infrastructureSection > div {
     text-align: center;
@@ -313,32 +313,34 @@ footer p {
   }
   .fourthAndFithSectionContainer {
     background-size: 40rem auto;
-    border: 1px solid;
-
-      background-image: url("/images/illustration-laptop-mobile.svg");
-
-     background-position: 0rem 0rem;
-      padding: 6rem 0rem 17rem 0rem;
-      margin-top: 4rem;
-    }
-  
-  .fourthSection{
-    padding: 20rem 0rem 0rem 2rem;
+    background-image: url("/images/illustration-laptop-mobile.svg");
+    background-position: center 0rem;
+    padding: 6rem 0rem 1rem 0rem;
+    margin-top: 4rem;
+  }
+  .fourthSection {
+    padding: 0rem;
+    margin-top: 23rem;
   }
   .fithSection {
-    padding: 2rem 0rem 0rem 2rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
   .fourthSection,
-.fithSection {
-  margin-left: 40%;
-  padding: 2rem 15% 2rem 2%;
-  word-spacing: 1px;
-  word-break: keep-all;
-}
+  .fithSection {
+    text-align: center;
+    margin-left: 0;
+    padding: 2rem 3rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .firstAndSecondSectionContainer {
     background-image: url("/images/illustration-editor-mobile.svg");
+    background-position: 57vw 6.5rem;
+  }
+  .firstSection,
+  .secondSection {
+    margin-right: 30%;
+    padding: 2rem 0rem 2rem 10vw;
   }
   .hamnav label {
     display: inline-block;
