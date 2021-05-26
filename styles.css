@@ -8,15 +8,12 @@
   --Lighter-red: hsl(356, 100%, 66%);
   --Very-light-red-background: hsl(355, 100%, 74%);
   --Very-dark-blue: hsl(208, 49%, 24%);
-
   --White: hsl(0, 0%, 100%);
   --Grayish-blue: hsl(240, 2%, 79%);
   --Very-dark-grayish-blue: hsl(207, 13%, 34%);
   --Very-dark-black-blue: hsl(240, 10%, 16%);
-
   --Very-light-red: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
-
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
   --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
@@ -24,7 +21,6 @@ button {
   outline: none;
   cursor: pointer;
 }
-
 h1 {
   font-family: "Overpass", sans-serif;
   color: var(--White);
@@ -291,6 +287,14 @@ footer p {
   }
 }
 @media screen and (max-width: 905px) {
+  .intro {
+    padding: 3rem 1.5rem;
+    height: 40rem;
+  }
+  .hamnav {
+    display: flex;
+    justify-content: right;
+  }
   .hamnav label {
     display: inline-block;
     color: white;
@@ -306,12 +310,19 @@ footer p {
   }
   .firstAndSecondSectionContainer {
     background-image: url("/images/illustration-editor-mobile.svg");
-    background-position: 57vw 6.5rem;
+    background-position: center 14rem;
+    background-size: 25rem auto;
+  }
+  .firstSection {
+    padding: 24rem 3rem 2rem 3rem;
+  }
+  .secondSection {
+    padding: 2rem 3rem 0rem 3rem;
   }
   .firstSection,
   .secondSection {
-    margin-right: 33%;
-    padding: 2rem 0rem 2rem 10vw;
+    text-align: center;
+    margin-right: 0rem;
   }
   .infrastructureSection {
     flex-direction: column;
@@ -348,5 +359,4 @@ footer p {
     margin-left: 0;
     padding: 2rem 3rem;
   }
-
 }
