@@ -320,16 +320,16 @@ footer p {
     justify-content: center;
   }
   .infrastructureSection > img {
-    width: 25rem;
+    width: 22rem;
     display: absolute;
-    margin: -16rem 5rem 0rem 5rem;
+    margin: -16rem 6rem 0rem 6rem;
   }
   .infrastructureSection > div {
     text-align: center;
     margin: 0rem 3rem 0rem 3rem;
   }
   .fourthAndFithSectionContainer {
-    background-size: 40rem auto;
+    background-size: 35rem auto;
     background-image: url("/images/illustration-laptop-mobile.svg");
     background-position: center 0rem;
     padding: 6rem 0rem 1rem 0rem;
