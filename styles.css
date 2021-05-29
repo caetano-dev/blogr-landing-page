@@ -83,9 +83,18 @@ header {
   position: sticky;
   top: 0;
 }
-.hamnav > label,
+.hamnavLabel {
+  background-image: url("/images/icon-hamburger.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 3rem;
+}
+.hamnavLabel,
 #hamburger {
   display: none;
+}
+.hamnavLabel-active {
+  background-image: url("/images/icon-close.svg");
 }
 .optionContainer {
   display: flex;
