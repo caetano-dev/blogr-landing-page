@@ -78,7 +78,8 @@ header {
   justify-content: space-between;
   padding-bottom: 6.4rem;
 }
-.hamnav {
+.hamnav,
+.hamnavLabel-active {
   width: 100%;
   position: sticky;
   top: 0;
@@ -304,7 +305,8 @@ footer p {
     display: flex;
     justify-content: right;
   }
-  .hamnav label {
+  .hamnav label,
+  .hamnavLabel-active {
     display: inline-block;
     color: white;
     font-style: normal;
@@ -316,6 +318,15 @@ footer p {
   }
   .optionContainer {
     display: none;
+    /*
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    */
+  }
+  .optionContainer span {
+    color: var(--Very-dark-black-blue);
   }
   .firstAndSecondSectionContainer {
     background-image: url("/images/illustration-editor-mobile.svg");
